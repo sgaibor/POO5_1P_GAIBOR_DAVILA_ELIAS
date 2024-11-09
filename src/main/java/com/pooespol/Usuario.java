@@ -3,13 +3,13 @@ import java.util.Date;
 import javax.swing.JSpinner.DateEditor;
 
 public class Usuario {
-    private int codigoUnico;
-    private String cedula;
-    private String nombres;
-    private String apellidos;
-    private String usuario;
-    private String contraseña;
-    private char rol;
+    protected int codigoUnico;
+    protected String cedula;
+    protected String nombres;
+    protected String apellidos;
+    protected String usuario;
+    protected String contraseña;
+    protected char rol;
     public Usuario(int codigoUnico, String cedula,String nombres, String apellidos, String usuario, String contraseña, char rol){
         this.codigoUnico=codigoUnico;
         this.cedula=cedula;
