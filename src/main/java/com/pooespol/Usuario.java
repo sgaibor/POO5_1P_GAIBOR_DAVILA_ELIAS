@@ -2,7 +2,7 @@ package com.pooespol;
 import java.util.Date;
 import javax.swing.JSpinner.DateEditor;
 
-public class Usuario {
+public abstract class Usuario {
     protected int codigoUnico;
     protected String cedula;
     protected String nombres;
