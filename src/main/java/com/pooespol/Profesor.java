@@ -1,5 +1,6 @@
 package com.pooespol;
 import java.util.ArrayList;
+import java.util.Date;
 public class Profesor extends Usuario {
 
     private String facultad;
@@ -37,7 +38,13 @@ public class Profesor extends Usuario {
         this.materias=materias;
     }
 
-    
+    @Override
+    public void gestionarReserva(Date fecha) {
+        System.out.println("Gestionando reserva para el profesor"+ nombres);
+    }  
+@Override 
+public void enviarCorreo(String motivo){
 
+}
     
 }

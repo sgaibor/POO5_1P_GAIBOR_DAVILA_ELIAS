@@ -28,15 +28,9 @@ public class Estudiante extends Usuario {
     }
 
     public void gestionarReservar(String fecha) {
-        // Lógica para gestionar una reserva
+        System.out.println("Reserva del estudiante: "+nombres);
     }
-
-    public String consultarReserva(String fecha) {
-        // Lógica para consultar una reserva
-        return "Detalles de la reserva en la fecha " + fecha;
-    }
-
     public void enviarCorreo(String motivo) {
-        // Lógica para enviar un correo
+        System.out.println("Enviando correo al Estudiante "+ nombres + "por:" motivo);
     }
 }

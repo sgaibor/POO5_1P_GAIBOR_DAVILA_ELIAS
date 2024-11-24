@@ -23,12 +23,10 @@ public abstract class Usuario {
         return "Reserva consultada para la fecha"+fecha.toString();
 
     }
-    public void gestionarReserva(Date fecha){
-        System.out.println("Reserva gestionada para la fecha:"+ fecha.toString());
-    }
-    public void enviarCorreo(String motivo){
-        System.out.println("Correo enviado con el motivo:"+ motivo);
-    }
+    public abstract void gestionarReserva(Date fecha);
+    
+    public abstract void enviarCorreo(String motivo);
+    
     public int getCodigoUnico(){
         return codigoUnico;
     }
@@ -72,4 +70,3 @@ public abstract class Usuario {
         this.rol=rol;
     }
 }
-
