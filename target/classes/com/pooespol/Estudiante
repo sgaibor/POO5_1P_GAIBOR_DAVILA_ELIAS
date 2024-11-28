@@ -26,11 +26,12 @@ public class Estudiante extends Usuario {
     public void setCarrera(String carrera) {
         this.carrera = carrera;
     }
-
+    @Override
     public void gestionarReservar(String fecha) {
         System.out.println("Reserva del estudiante: "+nombres);
     }
+    @Override
     public void enviarCorreo(String motivo) {
-        System.out.println("Enviando correo al Estudiante "+ nombres + "por:" motivo);
+        System.out.println("Enviando correo al Estudiante "+ nombres + "por:"+ motivo);
     }
 }
